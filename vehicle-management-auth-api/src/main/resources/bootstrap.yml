@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: vehicle-management-auth-api
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://192.168.0.120:8848/
+        namespace: vehicle-management-develop
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.example.vehicle.auth
